@@ -1,9 +1,9 @@
 package com.example.payment_service.service.interfaces;
 
-import com.example.payment_service.pojo.Transaction;
+import com.example.payment_service.dto.TransactionDTO;
 
 public interface PaymentStatusService {
 	
-	public String processStatus(Transaction transaction);
+	public TransactionDTO processStatus(TransactionDTO txnDTO);
 
 }

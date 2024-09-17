@@ -23,6 +23,7 @@ public class PaymentStatusFactory {
 			return handler;
 		
 		case INITIATED: 
+			return null;
 			
 		default:
 			System.out.println("NO Handler found for this status" + status.getName());

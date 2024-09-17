@@ -31,4 +31,17 @@ public enum TransactionStatusEnum {
         System.out.println("No TransactionStatusEnum Found by this ID: " + id);
         return null;
     }
+    
+    public static TransactionStatusEnum getByName(String name) {
+    	for(TransactionStatusEnum status: values()) {
+    		if(status.getName().equals(name)) {
+    			return status; 
+    		}
+    	}
+    	
+    	System.out.println("**** No TransactionStatusEnum Found by this Name: " + name);
+    	return null;
+    }
+    
+    
 }
